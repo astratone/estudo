@@ -169,3 +169,193 @@ print(f'Convetido em acres: {a}')
 a = float(input(f'Digite o valor em acres: '))
 m = a * 4048.58
 print(f'Convetido em m²: {m}')
+
+# 26
+m = float(input(f'Digite o valor em m²: '))
+h = m * 0.0001
+print(f'Coversão em hectares: {h}ha.')
+
+# 27
+h = float(input(f'Digite o valor em hectares: '))
+m = h * 10000
+print(f'Coversão em metros quadrados: {m}m².')
+
+# 28
+num1 = int(input(f'Digite o primeiro número: '))
+num2 = int(input(f'Digite o segundo número: '))
+num3 = int(input(f'Digite o terceiro número: '))
+soma = (num1 ** 2) + (num2 ** 2) + (num3 ** 2)
+print(f'A soma dos quadrados dos três números é: {soma}')
+
+# 29
+nota1 = float(input(f'Digite a nota 1: '))
+nota2 = float(input(f'Digite a nota 2: '))
+nota3 = float(input(f'Digite a nota 3: '))
+nota4 = float(input(f'Digite a nota 4: '))
+media = (nota1 + nota2 + nota3 + nota4) / 4
+print(f'A média aritimética é: {media}')
+
+# 30
+real = float(input(f'Digite o valor em reais: R$ '))
+dolar = real / 4.00
+print(f'O valor em Dólar é: ${dolar}')
+
+# 31
+num = int(input(f'Digite um número: '))
+print(f'Anterior: {num -1}', f'Posterior: {num + 1}')
+
+# 32
+num = int(input(f'Digite um número: '))
+triplo = (num * 3) + 1
+dobro = (num * 2) - 1
+print(f'{triplo + dobro}')
+
+# 33
+l = int(input(f'Digite um lado do quadrado: '))
+a = l ** 2
+print(f'O valor da área do quadro é: {a}')
+
+# 34
+raio = float(input(f'Digite o valor do raio de um círculo: '))
+pi = 3.141592
+a = pi * (raio **2)
+print(f'A área do círculo é: {a}')
+
+# 35
+a = int(input(f'Digite o valor do cateto 1: '))
+b = int(input(f'Digite o valor do cateto 2: '))
+h = (a ** 2 + b ** 2) ** 1/2
+print(f'O valor da hipotenusa é: {h}')
+
+# 36
+altura = float(input(f'Digite a altura do cilindro: '))
+raio = float(input(f'Digite o raio do cilindro: '))
+pi = 3.141592
+v = pi * (raio ** 2) * altura
+print(f'O valor do volume do cilindro é: {v}')
+
+# 37
+produto = float(input(f'Digite o Valor do produto: R$ '))
+desconto = 0.12
+resultado = produto * desconto
+print(f'Valor com desconto de 12%: R${resultado}')
+
+# 38
+salario = float(input(f'Digite seu salário: R$'))
+aumento = salario + salario * 0.25
+print(f'Seu salário com aumento de 25% é: R${aumento}')
+
+# 39
+premio = 780_000.00
+ganhador1 = premio * 0.46
+ganhador2 = premio * 0.32
+ganhador3 = premio - (ganhador1 + ganhador2)  # ou 22% (0.22)
+print(f'Ganhador 1 um receberá: R${ganhador1}')
+print(f'Ganhador 2 um receberá: R${ganhador2}')
+print(f'Ganhador 3 um receberá: R${ganhador3}')
+
+# 40
+diaria = 30.00
+dias = int(input(f'Digite a quantidade de dias trabalhados: '))
+imposto = 0.08  # imposto de renda 8%
+total = dias * diaria  # valor bruto
+desconto = total * imposto  # valor bruto * 8%
+liquido = total - imposto  # valor líquido
+print(f'Valor líquido a receber: R$ {liquido}')
+
+# 41
+hora_de_trab = float(input(f'Digite o valor da hora de trabalho: R$ '))
+hora_trab = int(input(f'Digite a quantidade de horas trabalhadas: '))
+valor = hora_de_trab * hora_trab
+adicional = valor * 0.10
+total = valor + adicional
+print(f'Total a receber: R${total}')
+
+# 42
+salario_base = float(input(f'Digite o salário base: R$ '))
+gratificacao = salario_base * 0.05  # Gratificação de 5%
+print(f'Gratificação: {gratificacao}')
+desc_imposto = salario_base - (salario_base * 0.07)  # Imposto de renda 7%
+print(f'Desconto imposto: {desc_imposto}')
+salario_receber = desc_imposto + gratificacao
+print(f'Salário a receber: R${salario_receber}')
+
+# 43
+valor_total = float(input(f'Digite o valor total do produto: R$'))
+desconto = valor_total * 0.10
+print(f'Valor com 10% de desconto: R$ {valor_total - desconto}')
+parcela = valor_total / 3
+print(f'Parcelando em 3x sem juros, cada parcela sai por: R${parcela}')
+comissao = (valor_total - desconto) * 0.05
+print(f'Comissão de 5% do vendedor (à vista): R${comissao}')
+comissao2 = valor_total * 0.05
+print(f'Comissão de 5% do vendedor (parcelado): R${comissao2}')
+
+# 44
+degrau = int(input(f'Digite a altura do degrau: '))
+destino = int(input(f'Digite a altura de destino: '))
+x = destino - degrau
+print(f'Faltam {x} degraus.')
+
+# 45
+nome = 'anne'
+print(nome.upper())
+nome2 = 'PEDRO'
+print(nome2.lower())
+
+# 46
+num = int(input(f'Digite um número de três dígitos: '))
+if num < 100:
+    print('O número tem menos de 3 dígitos.')
+elif num > 999:
+    print('O número tem mais de três dígitos.')
+else:
+    print(f'{str(num)[::-1]}')
+
+# 47
+num = int(input(f'Digite um número de 4 dígitos: '))
+if num < 1000:
+    print('O número tem menos de 4 dígitos.')
+elif num > 9999:
+    print('O número tem mais de 4 dígitos.')
+else:
+    print(f'{num}')
+
+# 48
+s = int(input(f'Digite o valor em segundos: '))
+h = s // 3600
+resto = s % 3600
+m = resto // 60
+s = resto % 60
+print(f'{int(h)}h:{int(m)}m:{int(s)}s')
+
+# 49
+h = int(input(f'Digite a hora incial: '))
+m = int(input(f'Digite os minutos inciais: '))
+s = int(input(f'Digite os segundos iniciais: '))
+duracao = int(input(f'Digite a duração do experimento em segundos: '))
+print(f'Experimento começou às {h}h:{m}m:{s}s e durou {duracao}s.')
+h2 = duracao // 3600 + h
+resto = (duracao % 3600)
+m2 = resto // 60 + m
+s2 = resto % 60 + s
+print(f'Experimento terminou às {int(h2)}h:{int(m2)}m:{int(s2)}s')
+
+# 50
+idade = int(input(f'Digite a sua idade: '))
+ano_atual = int(input(f'Digite o ano atual: '))
+ano_nascimento = ano_atual - idade
+print(f'Seu ano de nascimento é: {ano_nascimento}')
+
+# 51
+
+# 52
+
+# 53
+c = float(input(f'Digite o comprimento do terreno: '))
+l = float(input(f'Digite a largura do terreno: '))
+p = float(input(f'Digite o preço do metro de tela: '))
+a = c * l
+tela = a * p
+print(f'Área do terreno: {a}m²')
+print(f'Custo para cercar o terreno: R${tela}')
